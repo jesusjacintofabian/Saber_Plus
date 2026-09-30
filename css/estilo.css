@@ -1,0 +1,155 @@
+:root {
+  --fondoPagina: #faf8f4;      /* blanco hueso */
+  --fondoPanel: #efede8;       /* gris neutro claro */
+  --textoPrincipal: #222222;
+  --textoSecundario: #5a5a5a;
+  --cafeOscuro: #4a3426;       /* hover y acentos */
+  --bordeSuave: #dcd9d2;
+  --nivelPrincipiante: #2f6b3f; /* verde oscuro */
+  --nivelIntermedio: #2b4f7a;   /* azul oscuro */
+  --nivelAvanzado: #7a2e2e;     /* rojo oscuro */
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: var(--fondoPagina);
+  color: var(--textoPrincipal);
+  line-height: 1.6;
+}
+
+/*Panel de navegación lateral*/
+.panelNavegacion { background-color: var(--fondoPanel); border-right: 1px solid var(--bordeSuave); }
+@media (min-width: 992px) { .panelNavegacion { position: sticky; top: 0; height: 100vh; } }
+
+.logoSitio {
+  display: inline-block;
+  background-color: var(--cafeOscuro);
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  margin: 0;
+}
+.nombreSitio { font-size: 0.9rem; color: var(--textoSecundario); margin: 0.4rem 0 1rem; }
+.panelNavegacion nav { border-top: 1px solid var(--bordeSuave); padding-top: 1rem; }
+
+.enlaceMenu {
+  display: block;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--textoPrincipal);
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* Hover - color contrastante*/
+.enlaceMenu:hover { background-color: var(--cafeOscuro); color: #ffffff; }
+.enlaceMenu.paginaActual { border-left: 4px solid var(--cafeOscuro); font-weight: bold; background-color: #ffffff; }
+.enlaceMenu.paginaActual:hover { background-color: var(--cafeOscuro); }
+
+/* Contenido general */
+.contenidoPrincipal { max-width: 1150px; }
+
+.encabezadoPagina { border-bottom: 1px solid var(--bordeSuave); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+.encabezadoPagina h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.3rem; }
+.encabezadoPagina p { color: var(--textoSecundario); margin: 0; }
+
+/* Índice de áreas*/
+.indiceAreas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.indiceAreas a {
+  border: 1px solid var(--bordeSuave);
+  background-color: #ffffff;
+  color: var(--textoPrincipal);
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+}
+.indiceAreas a:hover { background-color: var(--cafeOscuro); color: #ffffff; border-color: var(--cafeOscuro); }
+
+.tituloArea {
+  font-weight: 700;
+  border-left: 5px solid var(--cafeOscuro);
+  padding-left: 0.75rem;
+  margin: 2.5rem 0 1.25rem;
+}
+
+/* Tarjetas */
+.tarjetaCurso, .tarjetaCertificacion, .tarjetaArea {
+  background-color: #ffffff;
+  border: 1px solid var(--bordeSuave);
+  border-top: 4px solid var(--cafeOscuro);
+  border-radius: 6px;
+}
+.tarjetaPendiente { border-top-color: var(--bordeSuave); border-style: dashed; color: var(--textoSecundario); }
+.tarjetaArea:hover { border-top-color: var(--nivelIntermedio); }
+
+.etiquetaNivel {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+}
+/* El fondo indica el nivel */
+.nivelPrincipiante { background-color: var(--nivelPrincipiante); }
+.nivelIntermedio   { background-color: var(--nivelIntermedio); }
+.nivelAvanzado     { background-color: var(--nivelAvanzado); }
+.nivelOtro         { background-color: var(--textoSecundario); }
+/* Niveles dobles: mitad y mitad (corte recto, sin degradado) */
+.nivelPrincipianteIntermedio { background: linear-gradient(90deg, var(--nivelPrincipiante) 50%, var(--nivelIntermedio) 50%); }
+.nivelIntermedioAvanzado     { background: linear-gradient(90deg, var(--nivelIntermedio) 50%, var(--nivelAvanzado) 50%); }
+
+.nombreProveedor { color: var(--textoSecundario); font-size: 0.9rem; margin-bottom: 1rem; }
+
+.datosTarjeta dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--textoSecundario);
+}
+.datosTarjeta dd { font-size: 0.92rem; margin-bottom: 0.75rem; }
+
+.tarjetaCurso .card-footer, .tarjetaCertificacion .card-footer {
+  background-color: transparent;
+  border-top: 1px solid var(--bordeSuave);
+}
+.btnOficial { background-color: var(--cafeOscuro); color: #ffffff; }
+.btnOficial:hover { background-color: #2e1f16; color: #ffffff; }
+.tarjetaArea a { color: var(--textoPrincipal); text-decoration: none; }
+
+/* Formulario */
+.formularioSugerencias {
+  max-width: 720px;
+  background-color: #ffffff;
+  border: 1px solid var(--bordeSuave);
+  border-top: 4px solid var(--cafeOscuro);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--cafeOscuro);
+  box-shadow: 0 0 0 0.2rem rgba(74, 52, 38, 0.2);
+}
+input[type="radio"] { accent-color: var(--cafeOscuro); }
+
+/* Footer */
+.pieDePagina { border-top: 1px solid var(--bordeSuave); background-color: var(--fondoPanel); font-size: 0.9rem; }
+.zonaDerecha { text-align: left; }
+@media (min-width: 768px) { .zonaDerecha { text-align: right; } }
+
+/* Logo del proveedor en las tarjetas */
+.logoProveedor { height: 32px; width: auto; max-width: 90px; }
+
+/* Logo institucional - página de inicio */
+.encabezadoConLogo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.logoUniversidad {
+  height: 90px;
+  width: auto;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}
