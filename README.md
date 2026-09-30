@@ -1,8 +1,8 @@
 # ParaElSaber
 
 **Facilitador(a):** Dra. Denis Cedeño
-**Fecha:** 28/09/2026
-**Título de la experiencia:** Desarrollo Web
+**Fecha:** 30/09/2026
+**Título del Curso** Desarrollo Web
 **Tema:** Desarrollo de un sitio web
 **Objetivo:** Diseñar e implementar un sitio web, incluyendo elementos de HTML5, CSS y Bootstrap.
 
@@ -10,7 +10,6 @@
 
 - Mendoza Luis, 20-23-7674
 - Jacinto Jesús, 20-58-9524
-- Dionellys Rodríguez, 3-755-1520
 - Ivaneth Hacock, 3-760-2486
 
 ## Sobre el proyecto
@@ -38,16 +37,3 @@ El logo (PES) está hecho con HTML y CSS. El formulario todavía no guarda datos
 
 Publicado en GitHub Pages: https://jesusjacintofabian.github.io/ParaElSaber/
 
-Para abrirlo en local, clonar el repositorio y abrir `index.html` en el navegador. Se necesita internet para que cargue Bootstrap.
-
-## Estructura
-
-```
-ParaElSaber/
-├── index.html
-├── css/
-├── html/
-└── images/
-```
-
-El `index.html` de la raíz solo redirige a `html/index.html`, para que GitHub Pages abra el sitio directamente.
