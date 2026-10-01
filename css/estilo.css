@@ -1,155 +1,119 @@
 :root {
-  --fondoPagina: #faf8f4;      /* blanco hueso */
-  --fondoPanel: #efede8;       /* gris neutro claro */
+  --fondoPagina: #f7f5f1;
   --textoPrincipal: #222222;
   --textoSecundario: #5a5a5a;
-  --cafeOscuro: #4a3426;       /* hover y acentos */
-  --bordeSuave: #dcd9d2;
-  --nivelPrincipiante: #2f6b3f; /* verde oscuro */
-  --nivelIntermedio: #2b4f7a;   /* azul oscuro */
-  --nivelAvanzado: #7a2e2e;     /* rojo oscuro */
+  --bordeSuave: #e3dfd7;
+  --nivelPrincipiante: #2f6b3f;
+  --nivelIntermedio: #2b4f7a;
+  --nivelAvanzado: #7a2e2e;
+  --sombraSuave: 0 4px 16px rgba(30, 20, 10, 0.08);
+  --sombraFuerte: 0 10px 28px rgba(30, 20, 10, 0.16);
 }
+body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; background: var(--fondoPagina); color: var(--textoPrincipal); line-height: 1.6; }
+.contenidoPrincipal { padding-top: 2rem; padding-bottom: 3rem; }
+.textoSuave { color: var(--textoSecundario); }
 
-body {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  background-color: var(--fondoPagina);
-  color: var(--textoPrincipal);
-  line-height: 1.6;
-}
+/* Encabezado horizontal */
+.encabezadoSitio { background: var(--colorTemaOscuro); box-shadow: 0 2px 10px rgba(0,0,0,.25); z-index: 1030; }
+.marcaSitio { display: flex; align-items: center; gap: .6rem; }
+.logoMarca { width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,.3); }
+.nombreSitio { color: #fff; font-weight: 800; font-size: 1.3rem; letter-spacing: .3px; }
+.plusMarca { color: #ffc247; margin-left: .15rem; }
+.botonMenu { color: #fff; border-color: rgba(255,255,255,.4); }
+.enlaceMenu { display: inline-block; color: rgba(255,255,255,.85); text-decoration: none; padding: .45rem .9rem; border-radius: 999px; transition: background .2s, color .2s; }
+.enlaceMenu:hover { background: rgba(255,255,255,.18); color: #fff; }
+.enlaceMenu.paginaActual { background: #fff; color: var(--colorTemaOscuro); font-weight: 700; }
 
-/*Panel de navegación lateral*/
-.panelNavegacion { background-color: var(--fondoPanel); border-right: 1px solid var(--bordeSuave); }
-@media (min-width: 992px) { .panelNavegacion { position: sticky; top: 0; height: 100vh; } }
-
-.logoSitio {
-  display: inline-block;
-  background-color: var(--cafeOscuro);
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 0.2rem 0.8rem;
-  border-radius: 4px;
-  margin: 0;
-}
-.nombreSitio { font-size: 0.9rem; color: var(--textoSecundario); margin: 0.4rem 0 1rem; }
-.panelNavegacion nav { border-top: 1px solid var(--bordeSuave); padding-top: 1rem; }
-
-.enlaceMenu {
-  display: block;
-  padding: 0.55rem 0.9rem;
-  margin-bottom: 0.25rem;
-  color: var(--textoPrincipal);
-  text-decoration: none;
-  border-radius: 4px;
-}
-/* Hover - color contrastante*/
-.enlaceMenu:hover { background-color: var(--cafeOscuro); color: #ffffff; }
-.enlaceMenu.paginaActual { border-left: 4px solid var(--cafeOscuro); font-weight: bold; background-color: #ffffff; }
-.enlaceMenu.paginaActual:hover { background-color: var(--cafeOscuro); }
-
-/* Contenido general */
-.contenidoPrincipal { max-width: 1150px; }
-
-.encabezadoPagina { border-bottom: 1px solid var(--bordeSuave); padding-bottom: 1rem; margin-bottom: 1.5rem; }
-.encabezadoPagina h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.3rem; }
-.encabezadoPagina p { color: var(--textoSecundario); margin: 0; }
-
-/* Índice de áreas*/
-.indiceAreas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
-.indiceAreas a {
-  border: 1px solid var(--bordeSuave);
-  background-color: #ffffff;
-  color: var(--textoPrincipal);
-  text-decoration: none;
-  font-size: 0.85rem;
-  padding: 0.25rem 0.8rem;
-  border-radius: 20px;
-}
-.indiceAreas a:hover { background-color: var(--cafeOscuro); color: #ffffff; border-color: var(--cafeOscuro); }
-
-.tituloArea {
-  font-weight: 700;
-  border-left: 5px solid var(--cafeOscuro);
-  padding-left: 0.75rem;
-  margin: 2.5rem 0 1.25rem;
-}
+/* Hero */
+.heroPagina { background: linear-gradient(120deg, var(--colorTema), var(--colorTemaOscuro)); color: #fff; padding: 1.6rem 0; position: relative; overflow: hidden; }
+.heroPagina::after { content: ""; position: absolute; right: -60px; top: -80px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,.08); }
+.heroContenido { display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: relative; z-index: 1; }
+.heroPagina h1 { font-size: 1.9rem; font-weight: 700; margin: 0; }
+.heroPagina p { margin: .2rem 0 0; opacity: .92; max-width: 640px; }
+.imagenHero { height: 110px; width: auto; max-width: 30%; filter: drop-shadow(0 4px 8px rgba(0,0,0,.25)); }
+.iconoHero { width: 64px; height: 64px; border-radius: 16px; background: #fff; display: grid; place-items: center; flex-shrink: 0; }
+.iconoHero img { width: 36px; height: 36px; }
+.migas { opacity: .8; text-transform: uppercase; letter-spacing: .5px; font-size: .72rem; }
 
 /* Tarjetas */
-.tarjetaCurso, .tarjetaCertificacion, .tarjetaArea {
-  background-color: #ffffff;
-  border: 1px solid var(--bordeSuave);
-  border-top: 4px solid var(--cafeOscuro);
-  border-radius: 6px;
-}
-.tarjetaPendiente { border-top-color: var(--bordeSuave); border-style: dashed; color: var(--textoSecundario); }
-.tarjetaArea:hover { border-top-color: var(--nivelIntermedio); }
+.tarjetaPes { background: #fff; border: 1px solid var(--bordeSuave); border-top: 4px solid var(--colorArea, var(--colorTema)); border-radius: 14px; box-shadow: var(--sombraSuave); transition: transform .2s, box-shadow .2s; position: relative; }
+.tarjetaPes:hover { transform: translateY(-4px); box-shadow: var(--sombraFuerte); }
+.cursoDetalle:hover { transform: none; }
+.tarjetaPendiente { border-style: dashed; color: var(--textoSecundario); background: transparent; box-shadow: none; }
+.tarjetaPendiente:hover { transform: none; box-shadow: none; }
+.tarjetaInfo .chipIcono { font-size: 1.4rem; }
+.tarjetaArea a { color: var(--textoPrincipal); text-decoration: none; font-weight: 600; }
+.chipIcono { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: color-mix(in srgb, var(--colorArea, var(--colorTema)) 14%, white); color: var(--colorTema); flex-shrink: 0; }
+.chipIcono img { width: 26px; height: 26px; }
 
-.etiquetaNivel {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  padding: 0.25rem 0.7rem;
-  border-radius: 4px;
-}
-/* El fondo indica el nivel */
-.nivelPrincipiante { background-color: var(--nivelPrincipiante); }
-.nivelIntermedio   { background-color: var(--nivelIntermedio); }
-.nivelAvanzado     { background-color: var(--nivelAvanzado); }
-.nivelOtro         { background-color: var(--textoSecundario); }
-/* Niveles dobles: mitad y mitad (corte recto, sin degradado) */
-.nivelPrincipianteIntermedio { background: linear-gradient(90deg, var(--nivelPrincipiante) 50%, var(--nivelIntermedio) 50%); }
-.nivelIntermedioAvanzado     { background: linear-gradient(90deg, var(--nivelIntermedio) 50%, var(--nivelAvanzado) 50%); }
-
-.nombreProveedor { color: var(--textoSecundario); font-size: 0.9rem; margin-bottom: 1rem; }
-
-.datosTarjeta dt {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--textoSecundario);
-}
-.datosTarjeta dd { font-size: 0.92rem; margin-bottom: 0.75rem; }
-
-.tarjetaCurso .card-footer, .tarjetaCertificacion .card-footer {
-  background-color: transparent;
-  border-top: 1px solid var(--bordeSuave);
-}
-.btnOficial { background-color: var(--cafeOscuro); color: #ffffff; }
-.btnOficial:hover { background-color: #2e1f16; color: #ffffff; }
-.tarjetaArea a { color: var(--textoPrincipal); text-decoration: none; }
-
-/* Formulario */
-.formularioSugerencias {
-  max-width: 720px;
-  background-color: #ffffff;
-  border: 1px solid var(--bordeSuave);
-  border-top: 4px solid var(--cafeOscuro);
-  border-radius: 6px;
-  padding: 1.5rem;
-}
-.form-control:focus, .form-select:focus {
-  border-color: var(--cafeOscuro);
-  box-shadow: 0 0 0 0.2rem rgba(74, 52, 38, 0.2);
-}
-input[type="radio"] { accent-color: var(--cafeOscuro); }
-
-/* Footer */
-.pieDePagina { border-top: 1px solid var(--bordeSuave); background-color: var(--fondoPanel); font-size: 0.9rem; }
-.zonaDerecha { text-align: left; }
-@media (min-width: 768px) { .zonaDerecha { text-align: right; } }
-
-/* Logo del proveedor en las tarjetas */
+/* Niveles */
+.grupoNiveles { display: flex; flex-wrap: wrap; gap: .3rem; }
+.etiquetaNivel { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: #fff; padding: .25rem .7rem; border-radius: 999px; }
+.nivelPrincipiante { background: var(--nivelPrincipiante); }
+.nivelIntermedio { background: var(--nivelIntermedio); }
+.nivelAvanzado { background: var(--nivelAvanzado); }
+.nivelOtro { background: var(--textoSecundario); }
+.nombreProveedor { color: var(--textoSecundario); font-size: .9rem; margin-bottom: .6rem; }
+.textoTemas { font-size: .92rem; margin-bottom: .5rem; }
 .logoProveedor { height: 32px; width: auto; max-width: 90px; }
+.textoProveedor { font-weight: 700; color: var(--textoSecundario); font-size: .85rem; }
 
-/* Logo institucional - página de inicio */
-.encabezadoConLogo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-.logoUniversidad {
-  height: 90px;
-  width: auto;
-  max-width: 100%;
-  mix-blend-mode: multiply;
-}
+/* Índice y áreas */
+.indiceAreas { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.indiceAreas a { border: 2px solid var(--colorArea); background: #fff; color: var(--colorArea); text-decoration: none; font-size: .85rem; font-weight: 600; padding: .25rem .9rem; border-radius: 999px; transition: .2s; }
+.indiceAreas a:hover { background: var(--colorArea); color: #fff; }
+.seccionArea { margin-bottom: 2.5rem; scroll-margin-top: 80px; }
+.cabeceraArea { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; border-left: 5px solid var(--colorArea); padding-left: .9rem; margin-bottom: 1rem; }
+.btnVerTodos { background: var(--colorArea); color: #fff; border-radius: 999px; font-weight: 600; }
+.btnVerTodos:hover { color: #fff; filter: brightness(.88); }
+
+/* Precios y botones */
+.pieTarjeta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; padding: .9rem 1.5rem 1.2rem; border-top: 1px solid var(--bordeSuave); }
+.botonesTarjeta { display: flex; flex-wrap: wrap; gap: .5rem; }
+.bloquePrecio { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+.precioActual { font-size: 1.6rem; font-weight: 800; color: var(--colorTemaOscuro); }
+.precioGratis { color: var(--nivelPrincipiante); }
+.precioAnterior { text-decoration: line-through; color: var(--textoSecundario); }
+.etiquetaOferta { background: #d6293e; color: #fff; font-size: .75rem; font-weight: 700; padding: .1rem .5rem; border-radius: 6px; }
+.btnCarrito { background: var(--colorTema); color: #fff; font-weight: 600; border-radius: 10px; }
+.btnCarrito:hover { background: var(--colorTemaOscuro); color: #fff; }
+.btnIrCurso { background: #fff; color: var(--colorTema); border: 2px solid var(--colorTema); font-weight: 600; border-radius: 10px; }
+.btnIrCurso:hover { background: var(--colorTema); color: #fff; }
+
+/* Página interna de curso */
+.enlaceVolver { display: inline-block; margin-bottom: 1.2rem; color: var(--colorTema); text-decoration: none; font-weight: 600; }
+.cursoDetalle { scroll-margin-top: 80px; overflow: hidden; }
+.tituloAprenderas { text-transform: uppercase; letter-spacing: .5px; color: var(--colorTema); margin-top: 1.2rem; }
+.listaAprenderas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .4rem .9rem; }
+.listaAprenderas i { color: var(--nivelPrincipiante); }
+.panelCompra { background: color-mix(in srgb, var(--colorTema) 7%, white); padding: 1.5rem; display: flex; flex-direction: column; gap: .7rem; justify-content: center; border-left: 1px solid var(--bordeSuave); }
+.bloquePrecioGrande .precioActual { font-size: 2.2rem; }
+.avisoOferta { background: #fff1d6; color: #8a5a00; border-radius: 8px; padding: .4rem .7rem; font-weight: 600; font-size: .9rem; }
+.avisoGratis { background: #dff3e4; color: var(--nivelPrincipiante); }
+.datoExtra { color: var(--textoSecundario); font-size: .9rem; }
+
+/* Certificaciones */
+.avisoDescuentoGlobal { display: flex; align-items: center; gap: .9rem; background: #fff1d6; color: #7a4f00; border: 1px solid #f3d38b; border-radius: 14px; padding: .9rem 1.2rem; margin-bottom: 1.2rem; }
+.avisoDescuentoGlobal i { font-size: 1.5rem; }
+.cursoRelacionado { font-size: .88rem; color: var(--textoSecundario); margin: .6rem 0 0; }
+.estadoDescuento { font-size: .82rem; color: var(--textoSecundario); }
+.estadoDescuento.conDescuento { color: var(--nivelPrincipiante); font-weight: 700; }
+.tarjetaCertificacion .listaAprenderas { grid-template-columns: 1fr; margin-bottom: 0; }
+
+/* Inicio y formulario */
+.bandaOrganizacion { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; background: #fff; border: 1px solid var(--bordeSuave); border-radius: 14px; padding: 1.5rem; box-shadow: var(--sombraSuave); }
+.logoUniversidad { height: 90px; width: auto; max-width: 100%; mix-blend-mode: multiply; }
+.formularioSugerencias { width: 100%; max-width: 720px; background: #fff; border: 1px solid var(--bordeSuave); border-top: 4px solid var(--colorTema); border-radius: 14px; box-shadow: var(--sombraSuave); padding: 1.8rem; }
+.form-control:focus, .form-select:focus { border-color: var(--colorTema); box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--colorTema) 25%, transparent); }
+input[type="radio"] { accent-color: var(--colorTema); }
+.btnOficial { background: var(--colorTema); color: #fff; border-radius: 10px; }
+.btnOficial:hover { background: var(--colorTemaOscuro); color: #fff; }
+
+/* Footer horizontal */
+.pieDePagina { background: var(--colorTemaOscuro); color: rgba(255,255,255,.85); padding: 1.6rem 0; font-size: .9rem; border-top: 4px solid var(--colorTema); }
+.filaPie { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1.5rem 2.5rem; }
+.bloquePie { display: flex; flex-direction: column; gap: .3rem; }
+.bloquePie h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin: 0 0 .3rem; }
+.listaPie { list-style: none; margin: 0; padding: 0; }
+.listaIntegrantes { display: grid; grid-template-columns: repeat(3, auto); gap: .15rem 2rem; }
+@media (max-width: 767px) { .listaIntegrantes { grid-template-columns: 1fr; } .imagenHero { display: none; } .panelCompra { border-left: 0; border-top: 1px solid var(--bordeSuave); } }

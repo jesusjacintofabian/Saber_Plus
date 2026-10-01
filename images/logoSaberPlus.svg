@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logotipo de Saber Plus">
+  <defs>
+    <linearGradient id="fondoLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset="1" stop-color="#ef476f"/></linearGradient>
+    <linearGradient id="libroLogo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffe9ef"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#fondoLogo)"/>
+  <path d="M8 29C19 25 27 26 32 31C37 26 45 25 56 29V48C45 44 37 45 32 50C27 45 19 44 8 48Z" fill="url(#libroLogo)"/>
+  <path d="M32 31V50" stroke="#c43a5f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M14 34C21 32 26 33 29 36M14 39C21 37 26 38 29 41M50 34C43 32 38 33 35 36M50 39C43 37 38 38 35 41" stroke="#f3a7b9" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+  <circle cx="32" cy="15" r="9" fill="#ffffff"/>
+  <path d="M32 9.5v11M26.5 15h11" stroke="#d63a63" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

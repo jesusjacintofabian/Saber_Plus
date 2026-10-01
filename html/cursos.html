@@ -3,593 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cursos | ParaElSaber</title>
-
+  <title>Cursos | Saber Plus</title>
+  <link rel="icon" type="image/svg+xml" href="../images/logoSaberPlus.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-
-
-    <header class="col-12 col-lg-2 panelNavegacion p-3">
-
-      <p class="logoSitio">PES</p>
-      <p class="nombreSitio">ParaElSaber</p>
-      <nav>
-        <a class="enlaceMenu" href="index.html">Inicio</a>
-        <a class="enlaceMenu paginaActual" href="cursos.html">Cursos</a>
-        <a class="enlaceMenu" href="certificaciones.html">Certificaciones</a>
-        <a class="enlaceMenu" href="contacto.html">Contacto</a>
-      </nav>
-    </header>
-
-    <div class="col-12 col-lg-10 d-flex flex-column p-0">
-      <main class="contenidoPrincipal p-3 p-md-4 flex-grow-1">
-        <header class="encabezadoPagina encabezadoConLogo">
-          <div>
-            <h1>Cursos</h1>
-            <p>Cursos organizados por área. El nivel es solo una clasificación informativa.</p>
-          </div>
-
-          <img class="ilustracionEncabezado" src="../images/ilustracion-aprendizaje.svg" alt="Ilustración de una persona aprendiendo en línea">
-        </header>
-
-        <!-- Índice: enlaces a cada área de esta página -->
-        <nav class="indiceAreas" aria-label="Áreas">
-          <a href="#ciberseguridad">Ciberseguridad</a>
-          <a href="#programacion">Programación</a>
-          <a href="#desarrolloWeb">Desarrollo Web</a>
-          <a href="#redes">Redes</a>
-          <a href="#basesDeDatos">Bases de Datos</a>
-          <a href="#electronica">Electrónica</a>
-          <a href="#redBlueTeam">Red Team / Blue Team</a>
-          <a href="#forense">Informática Forense</a>
-        </nav>
-
-
-        <section id="ciberseguridad">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-ciberseguridad.svg" alt=""> Ciberseguridad</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">Introduction to Cybersecurity</h3>
-                <p class="nombreProveedor">Cisco Networking Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Ciberseguridad</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce conceptos de amenazas, protección de datos y seguridad en línea.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.netacad.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/google.svg" alt="Logo de Google (en Coursera)">
-                </div>
-                <h3 class="h5 card-title mt-3">Foundations of Cybersecurity</h3>
-                <p class="nombreProveedor">Google (en Coursera)</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Ciberseguridad</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce el campo de la ciberseguridad y sus roles, riesgos y herramientas básicas.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.coursera.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/isc2.svg" alt="Logo de ISC2">
-                </div>
-                <h3 class="h5 card-title mt-3">Certified in Cybersecurity: curso de preparación</h3>
-                <p class="nombreProveedor">ISC2</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Ciberseguridad</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Orientado a principios de seguridad, controles de acceso y respuesta a incidentes.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.isc2.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="programacion">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-programacion.svg" alt=""> Programación</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-
-                </div>
-                <h3 class="h5 card-title mt-3">CS50x: Introduction to Computer Science</h3>
-                <p class="nombreProveedor">Harvard University (CS50)</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Programación</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce ciencia de la computación: algoritmos, estructuras de datos y resolución de problemas.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/python.svg" alt="Logo de Python Institute">
-                </div>
-                <h3 class="h5 card-title mt-3">Python Essentials 1</h3>
-                <p class="nombreProveedor">Python Institute</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Programación</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce la sintaxis básica de Python, variables, control de flujo y funciones.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://pythoninstitute.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/freecodecamp.svg" alt="Logo de freeCodeCamp">
-                </div>
-                <h3 class="h5 card-title mt-3">Scientific Computing with Python</h3>
-                <p class="nombreProveedor">freeCodeCamp</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Programación</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Práctica de programación en Python con proyectos guiados.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.freecodecamp.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="desarrolloWeb">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-desarrolloWeb.svg" alt=""> Desarrollo Web</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/freecodecamp.svg" alt="Logo de freeCodeCamp">
-                </div>
-                <h3 class="h5 card-title mt-3">Responsive Web Design</h3>
-                <p class="nombreProveedor">freeCodeCamp</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Desarrollo Web</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce HTML, CSS y diseño adaptable a distintas pantallas.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.freecodecamp.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools">
-                </div>
-                <h3 class="h5 card-title mt-3">HTML Tutorial</h3>
-                <p class="nombreProveedor">W3Schools</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Desarrollo Web</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Explica la estructura de páginas web con HTML y sus elementos.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.w3schools.com/html/" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/khanacademy.svg" alt="Logo de Khan Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">Computer Programming: HTML y CSS</h3>
-                <p class="nombreProveedor">Khan Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Desarrollo Web</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce la creación de páginas web con HTML y CSS.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.khanacademy.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="redes">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-redes.svg" alt=""> Redes</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">Networking Basics</h3>
-                <p class="nombreProveedor">Cisco Networking Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Redes</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce dispositivos, protocolos y direccionamiento.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.netacad.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">Networking Essentials</h3>
-                <p class="nombreProveedor">Cisco Networking Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Redes</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Aborda conceptos de conectividad, configuración básica y redes domésticas o pequeñas.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.netacad.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-                  <img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">CCNA: Introduction to Networks</h3>
-                <p class="nombreProveedor">Cisco Networking Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Redes</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Aborda modelos de red, direccionamiento IP y configuración de switches y routers.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.netacad.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="basesDeDatos">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-basesDeDatos.svg" alt=""> Bases de Datos</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/khanacademy.svg" alt="Logo de Khan Academy">
-                </div>
-                <h3 class="h5 card-title mt-3">Intro to SQL</h3>
-                <p class="nombreProveedor">Khan Academy</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Bases de Datos</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce consultas SQL y manejo básico de datos en tablas.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.khanacademy.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools">
-                </div>
-                <h3 class="h5 card-title mt-3">SQL Tutorial</h3>
-                <p class="nombreProveedor">W3Schools</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Bases de Datos</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Explica sentencias SQL para consultar, insertar y modificar datos.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://www.w3schools.com/sql/" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div class="grupoNiveles">
-                    <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                    <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-                  </div>
-                  <img class="logoProveedor" src="../images/mongodb.svg" alt="Logo de MongoDB">
-                </div>
-                <h3 class="h5 card-title mt-3">MongoDB University</h3>
-                <p class="nombreProveedor">MongoDB</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Bases de Datos</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Aborda bases de datos no relacionales y el modelado de documentos.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://learn.mongodb.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="electronica">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-electronica.svg" alt=""> Electrónica</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-
-                </div>
-                <h3 class="h5 card-title mt-3">Circuits and Electronics (6.002)</h3>
-                <p class="nombreProveedor">MIT OpenCourseWare</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Electrónica</dd>
-                <dt>Costo</dt><dd>Gratuito (según la página del proveedor)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Aborda análisis de circuitos y fundamentos de electrónica.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://ocw.mit.edu" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/arduino.svg" alt="Logo de Arduino">
-                </div>
-                <h3 class="h5 card-title mt-3">Tutoriales de Arduino</h3>
-                <p class="nombreProveedor">Arduino</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Electrónica</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Introduce electrónica básica y programación de microcontroladores.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://docs.arduino.cc" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                  <img class="logoProveedor" src="../images/raspberrypi.svg" alt="Logo de Raspberry Pi Foundation">
-                </div>
-                <h3 class="h5 card-title mt-3">Proyectos de Raspberry Pi</h3>
-                <p class="nombreProveedor">Raspberry Pi Foundation</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Electrónica</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Proyectos guiados de computación física y programación.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://projects.raspberrypi.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="redBlueTeam">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-redBlueTeam.svg" alt=""> Red Team / Blue Team</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div class="grupoNiveles">
-                    <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-                    <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-                  </div>
-                  <img class="logoProveedor" src="../images/tryhackme.svg" alt="Logo de TryHackMe">
-                </div>
-                <h3 class="h5 card-title mt-3">Rutas de aprendizaje de TryHackMe</h3>
-                <p class="nombreProveedor">TryHackMe</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Red Team / Blue Team</dd>
-                <dt>Costo</dt><dd>Contenido gratuito y planes de pago (consultar detalles)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Prácticas guiadas de seguridad ofensiva y defensiva.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://tryhackme.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-                  <img class="logoProveedor" src="../images/hackthebox.svg" alt="Logo de Hack The Box">
-                </div>
-                <h3 class="h5 card-title mt-3">Hack The Box Academy</h3>
-                <p class="nombreProveedor">Hack The Box</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Red Team / Blue Team</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Módulos teórico-prácticos sobre seguridad ofensiva y defensiva.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://academy.hackthebox.com" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelIntermedio">Intermedio</span>
-                  <img class="logoProveedor" src="../images/cyberdefenders.svg" alt="Logo de CyberDefenders">
-                </div>
-                <h3 class="h5 card-title mt-3">Laboratorios de CyberDefenders</h3>
-                <p class="nombreProveedor">CyberDefenders</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Red Team / Blue Team</dd>
-                <dt>Costo</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Ejercicios prácticos orientados a análisis y defensa (Blue Team).</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://cyberdefenders.org" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-
-        <section id="forense">
-          <h2 class="h4 tituloArea"><img class="iconoArea" src="../images/icono-forense.svg" alt=""> Informática Forense</h2>
-          <div class="row g-3">
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-
-                </div>
-                <h3 class="h5 card-title mt-3">Digital Forensics Essentials (DFE)</h3>
-                <p class="nombreProveedor">EC-Council</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Informática Forense</dd>
-                <dt>Costo</dt><dd>Recursos gratuitos según la página del proveedor</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Fundamentos y proceso de investigación forense; Windows, Linux y malware.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://eccouncil.org/academia/digital-forensics-essentials-dfe/" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelPrincipiante">Principiante</span>
-
-                </div>
-                <h3 class="h5 card-title mt-3">Introduction to Digital Forensics</h3>
-                <p class="nombreProveedor">Alison</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Informática Forense</dd>
-                <dt>Costo</dt><dd>Curso gratuito; el certificado puede tener costo (según Alison)</dd>
-                <dt>Idioma</dt><dd>Consultar en la página oficial.</dd>
-                <dt>Conceptos y temas</dt><dd>Principios de informática forense, aspectos legales, informes y análisis de red y memoria.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><a class="btn btn-sm btnOficial" href="https://alison.com/course/introduction-to-digital-forensics" target="_blank" rel="noopener">Página oficial</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="card tarjetaCurso tarjetaPendiente h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                  <span class="etiquetaNivel nivelOtro">Pendiente</span>
-
-                </div>
-                <h3 class="h5 card-title mt-3">Pendiente de investigación</h3>
-                <p class="nombreProveedor">Pendiente</p>
-                <dl class="datosTarjeta mb-0">
-                <dt>Área</dt><dd>Informática Forense</dd>
-                <dt>Costo</dt><dd>Información no especificada por el proveedor.</dd>
-                <dt>Idioma</dt><dd>Información no especificada por el proveedor.</dd>
-                <dt>Conceptos y temas</dt><dd>Información pendiente de investigación.</dd>
-              </dl>
-              </div>
-              <div class="card-footer"><p class="mb-0 small">Página oficial: pendiente de investigación.</p></div>
-            </article>
-          </div>
-          </div>
-        </section>
-
-      </main>
-
-      <footer class="pieDePagina p-3">
-        <div class="row">
-
-          <div class="col-md-6">
-            <h4>Contacto</h4>
-            <p class="mb-0">Teléfono: +507 6123-4567<br>
-            Correo: info@paraelsaber.com<br>
-            Dirección: Ciudad de Panamá, Panamá</p>
-          </div>
-          <!-- Zona derecha: integrantes -->
-          <div class="col-md-6 zonaDerecha">
-            <h4>Integrantes</h4>
-            <p class="mb-0">Mendoza Luis, 20-23-7674</p>
-            <p class="mb-0">Jacinto Jesús, 20-58-9524</p>
-            <p class="mb-0">Dionellys Rodriguez, 3-755-1520</p>
-            <p class="mb-0">Ivaneth Hacock, 3-760-2486</p>
-          </div>
-        </div>
-      </footer>
+<body style="--colorTema:#1f4e8c;--colorTemaOscuro:#14335c">
+<header class="encabezadoSitio sticky-top">
+  <nav class="navbar navbar-expand-md container-xl">
+    <a class="marcaSitio navbar-brand" href="index.html"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt="Logotipo de Saber Plus"><span class="nombreSitio">Saber<span class="plusMarca">Plus</span></span></a>
+    <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+      </ul>
     </div>
-
+  </nav>
+</header>
+<section class="heroPagina"><div class="container-xl heroContenido">
+  <div class="d-flex align-items-center gap-3"><div><h1>Cursos</h1><p>Dos cursos destacados por área. Entra a cada tema para ver todo lo que aprenderás y sus ofertas.</p></div></div><img class="imagenHero" src="../images/ilustracionAprendizaje.svg" alt="">
+</div></section>
+<main class="container-xl contenidoPrincipal">
+<nav class="indiceAreas" aria-label="Áreas"><a href="#ciberseguridad" style="--colorArea:#1f4e8c">Ciberseguridad</a><a href="#programacion" style="--colorArea:#6a3fa0">Programación</a><a href="#desarrolloWeb" style="--colorArea:#c2571a">Desarrollo Web</a><a href="#redes" style="--colorArea:#0f7a8a">Redes</a><a href="#basesDeDatos" style="--colorArea:#2f6b3f">Bases de Datos</a><a href="#electronica" style="--colorArea:#b8860b">Electrónica</a><a href="#redBlueTeam" style="--colorArea:#a12b3d">Red Team / Blue Team</a><a href="#forense" style="--colorArea:#4a3d7a">Informática Forense</a></nav><section id="ciberseguridad" class="seccionArea" style="--colorArea:#1f4e8c">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoCiberseguridad.svg" alt=""></span><div><h2 class="h4 mb-0">Ciberseguridad</h2><p class="mb-0 textoSuave">Protege datos, redes y personas frente a amenazas digitales.</p></div></div>
+<a class="btn btnVerTodos" href="cursosCiberseguridad.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
+<h3 class="h5 mt-3">Introduction to Cybersecurity</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Introduce conceptos de amenazas, protección de datos y seguridad en línea.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosCiberseguridad.html#cursoIntroductionToCybersecurity"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/google.svg" alt="Logo de Google (en Coursera)"></div>
+<h3 class="h5 mt-3">Foundations of Cybersecurity</h3><p class="nombreProveedor">Google (en Coursera)</p><p class="textoTemas">Introduce el campo de la ciberseguridad y sus roles, riesgos y herramientas básicas.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$39</span><span class="precioAnterior">$49</span><span class="etiquetaOferta">-20%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosCiberseguridad.html#cursoFoundationsOfCybersecurity"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="programacion" class="seccionArea" style="--colorArea:#6a3fa0">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoProgramacion.svg" alt=""></span><div><h2 class="h4 mb-0">Programación</h2><p class="mb-0 textoSuave">Aprende a pensar como programador y a resolver problemas con código.</p></div></div>
+<a class="btn btnVerTodos" href="cursosProgramacion.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
+<h3 class="h5 mt-3">CS50x: Introduction to Computer Science</h3><p class="nombreProveedor">Harvard University (CS50)</p><p class="textoTemas">Introduce ciencia de la computación: algoritmos, estructuras de datos y resolución de problemas.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosProgramacion.html#cursoCs50xIntroductionToComputerScience"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/python.svg" alt="Logo de Python Institute"></div>
+<h3 class="h5 mt-3">Python Essentials 1</h3><p class="nombreProveedor">Python Institute</p><p class="textoTemas">Introduce la sintaxis básica de Python, variables, control de flujo y funciones.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$29</span><span class="precioAnterior">$39</span><span class="etiquetaOferta">-26%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosProgramacion.html#cursoPythonEssentials1"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="desarrolloWeb" class="seccionArea" style="--colorArea:#c2571a">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoDesarrolloWeb.svg" alt=""></span><div><h2 class="h4 mb-0">Desarrollo Web</h2><p class="mb-0 textoSuave">Construye sitios y aplicaciones que viven en el navegador.</p></div></div>
+<a class="btn btnVerTodos" href="cursosDesarrolloWeb.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/freecodecamp.svg" alt="Logo de freeCodeCamp"></div>
+<h3 class="h5 mt-3">Responsive Web Design</h3><p class="nombreProveedor">freeCodeCamp</p><p class="textoTemas">Introduce HTML, CSS y diseño adaptable a distintas pantallas.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosDesarrolloWeb.html#cursoResponsiveWebDesign"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools"></div>
+<h3 class="h5 mt-3">HTML Tutorial</h3><p class="nombreProveedor">W3Schools</p><p class="textoTemas">Explica la estructura de páginas web con HTML y sus elementos.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$19</span><span class="precioAnterior">$25</span><span class="etiquetaOferta">-24%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosDesarrolloWeb.html#cursoHtmlTutorial"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="redes" class="seccionArea" style="--colorArea:#0f7a8a">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoRedes.svg" alt=""></span><div><h2 class="h4 mb-0">Redes</h2><p class="mb-0 textoSuave">Entiende cómo se conectan y se comunican los dispositivos.</p></div></div>
+<a class="btn btnVerTodos" href="cursosRedes.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
+<h3 class="h5 mt-3">Networking Basics</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Introduce dispositivos, protocolos y direccionamiento.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$25</span><span class="precioAnterior">$35</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosRedes.html#cursoNetworkingBasics"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
+<h3 class="h5 mt-3">Networking Essentials</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Aborda conceptos de conectividad, configuración básica y redes domésticas o pequeñas.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$35</span><span class="precioAnterior">$45</span><span class="etiquetaOferta">-22%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosRedes.html#cursoNetworkingEssentials"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="basesDeDatos" class="seccionArea" style="--colorArea:#2f6b3f">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoBasesDeDatos.svg" alt=""></span><div><h2 class="h4 mb-0">Bases de Datos</h2><p class="mb-0 textoSuave">Organiza, consulta y administra información a gran escala.</p></div></div>
+<a class="btn btnVerTodos" href="cursosBasesDeDatos.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/khanacademy.svg" alt="Logo de Khan Academy"></div>
+<h3 class="h5 mt-3">Intro to SQL</h3><p class="nombreProveedor">Khan Academy</p><p class="textoTemas">Introduce consultas SQL y manejo básico de datos en tablas.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosBasesDeDatos.html#cursoIntroToSql"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools"></div>
+<h3 class="h5 mt-3">SQL Tutorial</h3><p class="nombreProveedor">W3Schools</p><p class="textoTemas">Explica sentencias SQL para consultar, insertar y modificar datos.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$19</span><span class="precioAnterior">$29</span><span class="etiquetaOferta">-34%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosBasesDeDatos.html#cursoSqlTutorial"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="electronica" class="seccionArea" style="--colorArea:#b8860b">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoElectronica.svg" alt=""></span><div><h2 class="h4 mb-0">Electrónica</h2><p class="mb-0 textoSuave">Diseña circuitos y proyectos físicos con microcontroladores.</p></div></div>
+<a class="btn btnVerTodos" href="cursosElectronica.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div></div>
+<h3 class="h5 mt-3">Circuits and Electronics (6.002)</h3><p class="nombreProveedor">MIT OpenCourseWare</p><p class="textoTemas">Aborda análisis de circuitos y fundamentos de electrónica.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosElectronica.html#cursoCircuitsAndElectronics6002"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/arduino.svg" alt="Logo de Arduino"></div>
+<h3 class="h5 mt-3">Tutoriales de Arduino</h3><p class="nombreProveedor">Arduino</p><p class="textoTemas">Introduce electrónica básica y programación de microcontroladores.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$15</span><span class="precioAnterior">$20</span><span class="etiquetaOferta">-25%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosElectronica.html#cursoTutorialesDeArduino"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="redBlueTeam" class="seccionArea" style="--colorArea:#a12b3d">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoRedBlueTeam.svg" alt=""></span><div><h2 class="h4 mb-0">Red Team / Blue Team</h2><p class="mb-0 textoSuave">Practica el ataque y la defensa en laboratorios reales.</p></div></div>
+<a class="btn btnVerTodos" href="cursosRedBlueTeam.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/tryhackme.svg" alt="Logo de TryHackMe"></div>
+<h3 class="h5 mt-3">Rutas de aprendizaje de TryHackMe</h3><p class="nombreProveedor">TryHackMe</p><p class="textoTemas">Prácticas guiadas de seguridad ofensiva y defensiva.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$10</span><span class="precioAnterior">$14</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosRedBlueTeam.html#cursoRutasDeAprendizajeDeTryhackme"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/hackthebox.svg" alt="Logo de Hack The Box"></div>
+<h3 class="h5 mt-3">Hack The Box Academy</h3><p class="nombreProveedor">Hack The Box</p><p class="textoTemas">Módulos teórico-prácticos sobre seguridad ofensiva y defensiva.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$49</span><span class="precioAnterior">$69</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosRedBlueTeam.html#cursoHackTheBoxAcademy"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="forense" class="seccionArea" style="--colorArea:#4a3d7a">
+<div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoForense.svg" alt=""></span><div><h2 class="h4 mb-0">Informática Forense</h2><p class="mb-0 textoSuave">Investiga evidencia digital siguiendo métodos rigurosos.</p></div></div>
+<a class="btn btnVerTodos" href="cursosForense.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
+<div class="row g-3"><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
+<h3 class="h5 mt-3">Digital Forensics Essentials (DFE)</h3><p class="nombreProveedor">EC-Council</p><p class="textoTemas">Fundamentos y proceso de investigación forense; Windows, Linux y malware.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$29</span><span class="precioAnterior">$45</span><span class="etiquetaOferta">-36%</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosForense.html#cursoDigitalForensicsEssentialsDfe"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
+<div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
+<h3 class="h5 mt-3">Introduction to Digital Forensics</h3><p class="nombreProveedor">Alison</p><p class="textoTemas">Principios de informática forense, aspectos legales, informes y análisis de red y memoria.</p></div>
+<div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
+<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<a class="btn btnIrCurso" href="cursosForense.html#cursoIntroductionToDigitalForensics"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section>
+</main>
+<footer class="pieDePagina"><div class="container-xl">
+  <div class="filaPie">
+    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small></div>
+    <div class="bloquePie"><h4>Contacto</h4><ul class="listaPie"><li><i class="bi bi-telephone"></i> +507 6123-4567</li><li><i class="bi bi-envelope"></i> info@saberplus.com</li><li><i class="bi bi-geo-alt"></i> Ciudad de Panamá, Panamá</li></ul></div>
+    <div class="bloquePie bloqueIntegrantes"><h4>Integrantes</h4><ul class="listaPie listaIntegrantes"><li>Mendoza Luis, 20-23-7674</li><li>Jacinto Jesús, 20-58-9524</li><li>Ivaneth Hacock, 3-760-2486</li></ul></div>
   </div>
-</div>
+</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
