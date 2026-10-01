@@ -1,14 +1,158 @@
-# Saber Plus
+**Saber Plus**
 
 Sitio web académico que reúne **cursos y certificaciones de tecnología**, organizados por área y nivel, para que quien empieza pueda explorar qué existe y qué se estudia en cada campo.
 
-**Facilitador(a):** Dra. Denis Cedeño  
-**Fecha:** 30/09/2026  
-**Título del Curso:** Desarrollo Web  
-**Tema:** Desarrollo de un sitio web  
-**Objetivo:** Diseñar e implementar un sitio web, incluyendo elementos de HTML5, CSS y Bootstrap.
+**Integrantes**
 
-## Integrantes
-
+- Mendoza Luis, 20-23-7674
 - Jacinto Jesús, 20-58-9524
 - Ivaneth Hacock, 3-760-2486
+
+**Páginas**
+
+|   |
+| - |
+
+**Página**
+
+|   |
+| - |
+
+**Archivo**
+
+|   |
+| - |
+
+**Descripción**
+
+|   |
+| - |
+
+Inicio
+
+|   |
+| - |
+
+html/index.html
+
+|   |
+| - |
+
+Presentación del sitio y acceso a las 8 áreas tecnológicas.
+
+|   |
+| - |
+
+Cursos
+
+|   |
+| - |
+
+html/cursos.html
+
+|   |
+| - |
+
+Dos cursos destacados por área, con precio y botones.
+
+|   |
+| - |
+
+Cursos por tema
+
+|   |
+| - |
+
+html/cursos{Area}.html
+
+|   |
+| - |
+
+Página interna de cada área con todos sus cursos, lo que se aprenderá y las ofertas.
+
+|   |
+| - |
+
+Certificaciones
+
+|   |
+| - |
+
+html/certificaciones.html
+
+|   |
+| - |
+
+5 secciones con precio de cada certificación y descuento si se compró el curso relacionado.
+
+|   |
+| - |
+
+Contacto
+
+|   |
+| - |
+
+html/contacto.html
+
+|   |
+| - |
+
+Formulario para sugerir cursos o certificaciones.
+
+**Áreas tecnológicas**
+
+Ciberseguridad, Programación, Desarrollo Web, Redes, Bases de Datos, Electrónica, Red Team / Blue Team e Informática Forense.
+
+Cada área tiene su página interna: cursosCiberseguridad.html, cursosProgramacion.html, cursosDesarrolloWeb.html, cursosRedes.html, cursosBasesDeDatos.html, cursosElectronica.html, cursosRedBlueTeam.html y cursosForense.html.
+
+**Características**
+
+- Encabezado y pie de página horizontales en todas las páginas.
+- Color distinto por página y por área.
+- Logotipo propio (images/logoSaberPlus.svg), también usado como icono de la pestaña.
+- Precios y ofertas en cada curso.
+- Certificaciones con descuento del 20 % si se compró el curso relacionado.
+- Botón **Añadir al carrito** (solo diseño, sin funcionalidad).
+- Botón **Ir al curso**: en la página de Cursos lleva a la ficha interna del curso; en las páginas internas abre la página oficial del curso.
+- Diseño adaptable a celular, tableta y computadora.
+
+**Estructura del proyecto**
+
+SaberPlus/
+ ├── css/
+ │   └── estilo.css
+ ├── html/
+ │   ├── index.html
+ │   ├── cursos.html
+ │   ├── cursos{Area}.html   (8 páginas internas)
+ │   ├── certificaciones.html
+ │   └── contacto.html
+ └── images/
+     └── (logotipo, íconos de áreas, ilustraciones y logos de proveedores)
+
+**Cómo ejecutarlo**
+
+1. Descomprime la carpeta SaberPlus.
+2. Abre html/index.html en el navegador.
+3. Se necesita conexión a internet para cargar Bootstrap y Bootstrap Icons.
+
+**Tecnologías**
+
+- HTML5 y CSS3
+- [Bootstrap 5.3 (CDN)](https://getbootstrap.com/ "https://getbootstrap.com/")
+- [Bootstrap Icons 1.11 (CDN)](https://icons.getbootstrap.com/ "https://icons.getbootstrap.com/")
+
+**Convención de nombres**
+
+Se usa **camelCase** en clases, identificadores y nombres de archivos de imágenes y páginas, por ejemplo: tarjetaCurso, precioActual, iconoDesarrolloWeb.svg, cursosBasesDeDatos.html.
+
+**Notas**
+
+- Los **precios y descuentos son valores de ejemplo** del proyecto; el costo real lo define cada proveedor.
+- La sección «Lo que aprenderás» de cada curso es un resumen basado en los temas del curso y debe contrastarse con la página oficial del proveedor.
+- Los botones de carrito no ejecutan ninguna acción, por indicación del docente.
+
+**Institución**
+
+Universidad Tecnológica de Panamá (UTP) – Facultad de Ingeniería de Sistemas Computacionales (FISC).
