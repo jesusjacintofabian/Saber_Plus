@@ -25,20 +25,6 @@ Cada área tiene su página interna: cursosCiberseguridad.html, cursosProgramaci
 - Botón **Ir al curso**: en la página de Cursos lleva a la ficha interna del curso; en las páginas internas abre la página oficial del curso.
 - Diseño adaptable a celular, tableta y computadora.
 
-**Estructura del proyecto**
-
-SaberPlus/
- ├── css/
- │   └── estilo.css
- ├── html/
- │   ├── index.html
- │   ├── cursos.html
- │   ├── cursos{Area}.html   (8 páginas internas)
- │   ├── certificaciones.html
- │   └── contacto.html
- └── images/
-     └── (logotipo, íconos de áreas, ilustraciones y logos de proveedores)
-
 **Cómo ejecutarlo**
 
 1. Descomprime la carpeta SaberPlus.
