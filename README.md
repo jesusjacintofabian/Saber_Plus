@@ -27,15 +27,31 @@ Cada área tiene su página interna: cursosCiberseguridad.html, cursosProgramaci
 
 **Cómo ejecutarlo (Proyecto 2, con PHP y MySQL)**
 
-1. Instala y abre **XAMPP**; enciende **Apache** y **MySQL**.
-2. Copia la carpeta del proyecto dentro de `C:\xampp\htdocs\` con el nombre `SaberPlus` (sin espacio).
-3. Entra a `http://localhost/phpmyadmin`, pestaña **Importar**, y selecciona `bd/saberplus.sql`. Esto crea la base `saberplus` con sus tablas, datos y procedimientos.
-4. Abre `http://localhost/SaberPlus/` en el navegador.
-5. Panel de administrador: enlace **Administrador** en el pie de página (`php/login.php`).
-   - Usuario: `admin`
-   - Contraseña: `Admin123*`
-6. Si tu MySQL tiene contraseña, cámbiala en `php/conexion.php`.
-7. Se necesita conexión a internet para cargar Bootstrap y Bootstrap Icons.
+> **Importante:** el sitio solo funciona ejecutándolo con **XAMPP** (Apache + PHP + MySQL).
+> Si se abre `index.html` con doble clic (`file:///...`) o se publica en GitHub Pages, las páginas se ven, pero el carrito, el contacto, la búsqueda y el login **no funcionan**, porque necesitan PHP y la base de datos.
+
+1. Instala **XAMPP** y enciende **Apache** y **MySQL**.
+   - Windows: desde el XAMPP Control Panel.
+   - Linux: `sudo /opt/lampp/lampp start`
+2. Coloca el proyecto en la carpeta `htdocs` con el nombre `SaberPlus` (sin espacio):
+   - Windows: `C:\xampp\htdocs\SaberPlus`
+   - Linux: `/opt/lampp/htdocs/SaberPlus`
+   - O clónalo directamente: `git clone https://github.com/jesusjacintofabian/Saber_Plus.git SaberPlus`
+3. Importa la base de datos `bd/saberplus.sql` (crea la base `saberplus` con sus tablas, datos y procedimientos almacenados):
+   - Desde `http://localhost/phpmyadmin`, pestaña **Importar**, o
+   - Desde la terminal en Linux: `/opt/lampp/bin/mysql -u root -p < /opt/lampp/htdocs/SaberPlus/bd/saberplus.sql`
+4. Abre el sitio en el navegador escribiendo `http://localhost/SaberPlus/`.
+
+**Datos de acceso**
+
+| Para qué | Usuario | Contraseña | Dónde se configura |
+| --- | --- | --- | --- |
+| Conexión de PHP a MySQL | `root` | `123` | `php/conexion.php` (`$claveBD`) |
+| Panel de administrador del sitio | `admin` | `Admin123*` | Tabla `usuarios` (guardada con `password_hash`) |
+
+- La contraseña de MySQL de este proyecto es `123`. Si tu XAMPP usa otra (por defecto XAMPP no tiene contraseña), cambia `$claveBD` en `php/conexion.php`; por ejemplo `$claveBD = "";`.
+- Al panel de administrador se entra con el enlace **Administrador** del pie de página (`php/login.php`).
+- Se necesita conexión a internet para cargar Bootstrap y Bootstrap Icons.
 
 **Tecnologías**
 
@@ -61,7 +77,7 @@ Se usa **camelCase** en clases, identificadores y nombres de archivos de imágen
 Archivos nuevos:
 
 - `bd/saberplus.sql`: script de la base de datos.
-- `php/conexion.php`: conexión a MySQL.
+- `php/conexion.php`: conexión a MySQL (servidor, usuario, contraseña y nombre de la base).
 - `php/funciones.php`: funciones comunes (escapar HTML, carrito, token CSRF, verificar admin).
 - `php/encabezado.php` y `php/pie.php`: encabezado y pie de las páginas PHP.
 - `php/guardarContacto.php`: guarda el formulario de contacto.
