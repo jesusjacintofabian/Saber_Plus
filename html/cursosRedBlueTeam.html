@@ -15,7 +15,7 @@
     <a class="marcaSitio navbar-brand" href="index.html"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt="Logotipo de Saber Plus"><span class="nombreSitio">Saber<span class="plusMarca">Plus</span></span></a>
     <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/buscarCursos.php"><i class="bi bi-search"></i> Buscar</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/carrito.php"><i class="bi bi-cart3"></i> Carrito</a></li>
       </ul>
     </div>
   </nav>
@@ -30,7 +30,7 @@
 <h3 class="h6 tituloAprenderas">Lo que aprenderás</h3><ul class="listaAprenderas"><li><i class="bi bi-check-circle-fill"></i> Fundamentos de ciberseguridad ofensiva</li><li><i class="bi bi-check-circle-fill"></i> Laboratorios virtuales guiados</li><li><i class="bi bi-check-circle-fill"></i> Herramientas como Nmap y Burp Suite</li><li><i class="bi bi-check-circle-fill"></i> Retos tipo CTF</li></ul>
 <p class="datoExtra mb-0"><i class="bi bi-translate"></i> Idioma: Consultar en la página oficial.</p></div>
 <aside class="col-lg-4 panelCompra"><span class="textoSuave small">Precio del curso</span><div class="bloquePrecio bloquePrecioGrande"><span class="precioActual">$10</span><span class="precioAnterior">$14</span><span class="etiquetaOferta">-29%</span></div><div class="avisoOferta"><i class="bi bi-tag-fill"></i> Oferta: ahorras $4</div>
-<button type="button" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoRutasDeAprendizajeDeTryhackme"><button type="submit" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso w-100" href="https://tryhackme.com" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Ir al curso</a>
 <small class="textoSuave">Precios de ejemplo. Costo real: Contenido gratuito y planes de pago (consultar detalles)</small></aside></div></article><article id="cursoHackTheBoxAcademy" class="tarjetaPes cursoDetalle"><div class="row g-0">
 <div class="col-lg-8 p-4"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/hackthebox.svg" alt="Logo de Hack The Box"></div>
@@ -38,7 +38,7 @@
 <h3 class="h6 tituloAprenderas">Lo que aprenderás</h3><ul class="listaAprenderas"><li><i class="bi bi-check-circle-fill"></i> Módulos de pruebas de penetración</li><li><i class="bi bi-check-circle-fill"></i> Enumeración y explotación</li><li><i class="bi bi-check-circle-fill"></i> Escalada de privilegios</li><li><i class="bi bi-check-circle-fill"></i> Laboratorios prácticos por niveles</li></ul>
 <p class="datoExtra mb-0"><i class="bi bi-translate"></i> Idioma: Consultar en la página oficial.</p></div>
 <aside class="col-lg-4 panelCompra"><span class="textoSuave small">Precio del curso</span><div class="bloquePrecio bloquePrecioGrande"><span class="precioActual">$49</span><span class="precioAnterior">$69</span><span class="etiquetaOferta">-29%</span></div><div class="avisoOferta"><i class="bi bi-tag-fill"></i> Oferta: ahorras $20</div>
-<button type="button" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoHackTheBoxAcademy"><button type="submit" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso w-100" href="https://academy.hackthebox.com" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Ir al curso</a>
 <small class="textoSuave">Precios de ejemplo. Costo real: Consultar en la página oficial.</small></aside></div></article><article id="cursoLaboratoriosDeCyberdefenders" class="tarjetaPes cursoDetalle"><div class="row g-0">
 <div class="col-lg-8 p-4"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/cyberdefenders.svg" alt="Logo de CyberDefenders"></div>
@@ -46,13 +46,13 @@
 <h3 class="h6 tituloAprenderas">Lo que aprenderás</h3><ul class="listaAprenderas"><li><i class="bi bi-check-circle-fill"></i> Análisis de incidentes (Blue Team)</li><li><i class="bi bi-check-circle-fill"></i> Análisis de tráfico y logs</li><li><i class="bi bi-check-circle-fill"></i> Investigación de malware</li><li><i class="bi bi-check-circle-fill"></i> Retos de defensa realistas</li></ul>
 <p class="datoExtra mb-0"><i class="bi bi-translate"></i> Idioma: Consultar en la página oficial.</p></div>
 <aside class="col-lg-4 panelCompra"><span class="textoSuave small">Precio del curso</span><div class="bloquePrecio bloquePrecioGrande"><span class="precioActual">$39</span><span class="precioAnterior">$55</span><span class="etiquetaOferta">-29%</span></div><div class="avisoOferta"><i class="bi bi-tag-fill"></i> Oferta: ahorras $16</div>
-<button type="button" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoLaboratoriosDeCyberdefenders"><button type="submit" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso w-100" href="https://cyberdefenders.org" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Ir al curso</a>
 <small class="textoSuave">Precios de ejemplo. Costo real: Consultar en la página oficial.</small></aside></div></article></div>
 </main>
 <footer class="pieDePagina"><div class="container-xl">
   <div class="filaPie">
-    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small></div>
+    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small><small><a class="enlacePie" href="../php/login.php"><i class="bi bi-person-lock"></i> Administrador</a></small></div>
     <div class="bloquePie"><h4>Contacto</h4><ul class="listaPie"><li><i class="bi bi-telephone"></i> +507 6123-4567</li><li><i class="bi bi-envelope"></i> info@saberplus.com</li><li><i class="bi bi-geo-alt"></i> Ciudad de Panamá, Panamá</li></ul></div>
     <div class="bloquePie bloqueIntegrantes"><h4>Integrantes</h4><ul class="listaPie listaIntegrantes"><li>Mendoza Luis, 20-23-7674</li><li>Jacinto Jesús, 20-58-9524</li><li>Ivaneth Hacock, 3-760-2486</li></ul></div>
   </div>

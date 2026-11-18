@@ -15,7 +15,7 @@
     <a class="marcaSitio navbar-brand" href="index.html"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt="Logotipo de Saber Plus"><span class="nombreSitio">Saber<span class="plusMarca">Plus</span></span></a>
     <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/buscarCursos.php"><i class="bi bi-search"></i> Buscar</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/carrito.php"><i class="bi bi-cart3"></i> Carrito</a></li>
       </ul>
     </div>
   </nav>
@@ -31,12 +31,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
 <h3 class="h5 mt-3">Introduction to Cybersecurity</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Introduce conceptos de amenazas, protección de datos y seguridad en línea.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoIntroductionToCybersecurity"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosCiberseguridad.html#cursoIntroductionToCybersecurity"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/google.svg" alt="Logo de Google (en Coursera)"></div>
 <h3 class="h5 mt-3">Foundations of Cybersecurity</h3><p class="nombreProveedor">Google (en Coursera)</p><p class="textoTemas">Introduce el campo de la ciberseguridad y sus roles, riesgos y herramientas básicas.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$39</span><span class="precioAnterior">$49</span><span class="etiquetaOferta">-20%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoFoundationsOfCybersecurity"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosCiberseguridad.html#cursoFoundationsOfCybersecurity"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="programacion" class="seccionArea" style="--colorArea:#6a3fa0">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoProgramacion.svg" alt=""></span><div><h2 class="h4 mb-0">Programación</h2><p class="mb-0 textoSuave">Aprende a pensar como programador y a resolver problemas con código.</p></div></div>
 <a class="btn btnVerTodos" href="cursosProgramacion.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -44,12 +44,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
 <h3 class="h5 mt-3">CS50x: Introduction to Computer Science</h3><p class="nombreProveedor">Harvard University (CS50)</p><p class="textoTemas">Introduce ciencia de la computación: algoritmos, estructuras de datos y resolución de problemas.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoCs50xIntroductionToComputerScience"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosProgramacion.html#cursoCs50xIntroductionToComputerScience"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/python.svg" alt="Logo de Python Institute"></div>
 <h3 class="h5 mt-3">Python Essentials 1</h3><p class="nombreProveedor">Python Institute</p><p class="textoTemas">Introduce la sintaxis básica de Python, variables, control de flujo y funciones.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$29</span><span class="precioAnterior">$39</span><span class="etiquetaOferta">-26%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoPythonEssentials1"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosProgramacion.html#cursoPythonEssentials1"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="desarrolloWeb" class="seccionArea" style="--colorArea:#c2571a">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoDesarrolloWeb.svg" alt=""></span><div><h2 class="h4 mb-0">Desarrollo Web</h2><p class="mb-0 textoSuave">Construye sitios y aplicaciones que viven en el navegador.</p></div></div>
 <a class="btn btnVerTodos" href="cursosDesarrolloWeb.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -57,12 +57,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/freecodecamp.svg" alt="Logo de freeCodeCamp"></div>
 <h3 class="h5 mt-3">Responsive Web Design</h3><p class="nombreProveedor">freeCodeCamp</p><p class="textoTemas">Introduce HTML, CSS y diseño adaptable a distintas pantallas.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoResponsiveWebDesign"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosDesarrolloWeb.html#cursoResponsiveWebDesign"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools"></div>
 <h3 class="h5 mt-3">HTML Tutorial</h3><p class="nombreProveedor">W3Schools</p><p class="textoTemas">Explica la estructura de páginas web con HTML y sus elementos.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$19</span><span class="precioAnterior">$25</span><span class="etiquetaOferta">-24%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoHtmlTutorial"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosDesarrolloWeb.html#cursoHtmlTutorial"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="redes" class="seccionArea" style="--colorArea:#0f7a8a">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoRedes.svg" alt=""></span><div><h2 class="h4 mb-0">Redes</h2><p class="mb-0 textoSuave">Entiende cómo se conectan y se comunican los dispositivos.</p></div></div>
 <a class="btn btnVerTodos" href="cursosRedes.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -70,12 +70,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
 <h3 class="h5 mt-3">Networking Basics</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Introduce dispositivos, protocolos y direccionamiento.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$25</span><span class="precioAnterior">$35</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoNetworkingBasics"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosRedes.html#cursoNetworkingBasics"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/cisco.svg" alt="Logo de Cisco Networking Academy"></div>
 <h3 class="h5 mt-3">Networking Essentials</h3><p class="nombreProveedor">Cisco Networking Academy</p><p class="textoTemas">Aborda conceptos de conectividad, configuración básica y redes domésticas o pequeñas.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$35</span><span class="precioAnterior">$45</span><span class="etiquetaOferta">-22%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoNetworkingEssentials"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosRedes.html#cursoNetworkingEssentials"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="basesDeDatos" class="seccionArea" style="--colorArea:#2f6b3f">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoBasesDeDatos.svg" alt=""></span><div><h2 class="h4 mb-0">Bases de Datos</h2><p class="mb-0 textoSuave">Organiza, consulta y administra información a gran escala.</p></div></div>
 <a class="btn btnVerTodos" href="cursosBasesDeDatos.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -83,12 +83,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/khanacademy.svg" alt="Logo de Khan Academy"></div>
 <h3 class="h5 mt-3">Intro to SQL</h3><p class="nombreProveedor">Khan Academy</p><p class="textoTemas">Introduce consultas SQL y manejo básico de datos en tablas.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoIntroToSql"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosBasesDeDatos.html#cursoIntroToSql"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/w3schools.svg" alt="Logo de W3Schools"></div>
 <h3 class="h5 mt-3">SQL Tutorial</h3><p class="nombreProveedor">W3Schools</p><p class="textoTemas">Explica sentencias SQL para consultar, insertar y modificar datos.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$19</span><span class="precioAnterior">$29</span><span class="etiquetaOferta">-34%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoSqlTutorial"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosBasesDeDatos.html#cursoSqlTutorial"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="electronica" class="seccionArea" style="--colorArea:#b8860b">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoElectronica.svg" alt=""></span><div><h2 class="h4 mb-0">Electrónica</h2><p class="mb-0 textoSuave">Diseña circuitos y proyectos físicos con microcontroladores.</p></div></div>
 <a class="btn btnVerTodos" href="cursosElectronica.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -96,12 +96,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div></div>
 <h3 class="h5 mt-3">Circuits and Electronics (6.002)</h3><p class="nombreProveedor">MIT OpenCourseWare</p><p class="textoTemas">Aborda análisis de circuitos y fundamentos de electrónica.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoCircuitsAndElectronics6002"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosElectronica.html#cursoCircuitsAndElectronics6002"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div><img class="logoProveedor" src="../images/arduino.svg" alt="Logo de Arduino"></div>
 <h3 class="h5 mt-3">Tutoriales de Arduino</h3><p class="nombreProveedor">Arduino</p><p class="textoTemas">Introduce electrónica básica y programación de microcontroladores.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$15</span><span class="precioAnterior">$20</span><span class="etiquetaOferta">-25%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoTutorialesDeArduino"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosElectronica.html#cursoTutorialesDeArduino"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="redBlueTeam" class="seccionArea" style="--colorArea:#a12b3d">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoRedBlueTeam.svg" alt=""></span><div><h2 class="h4 mb-0">Red Team / Blue Team</h2><p class="mb-0 textoSuave">Practica el ataque y la defensa en laboratorios reales.</p></div></div>
 <a class="btn btnVerTodos" href="cursosRedBlueTeam.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -109,12 +109,12 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/tryhackme.svg" alt="Logo de TryHackMe"></div>
 <h3 class="h5 mt-3">Rutas de aprendizaje de TryHackMe</h3><p class="nombreProveedor">TryHackMe</p><p class="textoTemas">Prácticas guiadas de seguridad ofensiva y defensiva.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$10</span><span class="precioAnterior">$14</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoRutasDeAprendizajeDeTryhackme"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosRedBlueTeam.html#cursoRutasDeAprendizajeDeTryhackme"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelIntermedio">Intermedio</span></div><img class="logoProveedor" src="../images/hackthebox.svg" alt="Logo de Hack The Box"></div>
 <h3 class="h5 mt-3">Hack The Box Academy</h3><p class="nombreProveedor">Hack The Box</p><p class="textoTemas">Módulos teórico-prácticos sobre seguridad ofensiva y defensiva.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$49</span><span class="precioAnterior">$69</span><span class="etiquetaOferta">-29%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoHackTheBoxAcademy"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosRedBlueTeam.html#cursoHackTheBoxAcademy"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section><section id="forense" class="seccionArea" style="--colorArea:#4a3d7a">
 <div class="cabeceraArea"><div class="d-flex align-items-center gap-3"><span class="chipIcono"><img src="../images/iconoForense.svg" alt=""></span><div><h2 class="h4 mb-0">Informática Forense</h2><p class="mb-0 textoSuave">Investiga evidencia digital siguiendo métodos rigurosos.</p></div></div>
 <a class="btn btnVerTodos" href="cursosForense.html">Ver los 3 cursos <i class="bi bi-arrow-right"></i></a></div>
@@ -122,17 +122,17 @@
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
 <h3 class="h5 mt-3">Digital Forensics Essentials (DFE)</h3><p class="nombreProveedor">EC-Council</p><p class="textoTemas">Fundamentos y proceso de investigación forense; Windows, Linux y malware.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual">$29</span><span class="precioAnterior">$45</span><span class="etiquetaOferta">-36%</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoDigitalForensicsEssentialsDfe"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosForense.html#cursoDigitalForensicsEssentialsDfe"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div><div class="col-md-6"><article class="tarjetaPes tarjetaCurso h-100">
 <div class="p-4 pb-2"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
 <h3 class="h5 mt-3">Introduction to Digital Forensics</h3><p class="nombreProveedor">Alison</p><p class="textoTemas">Principios de informática forense, aspectos legales, informes y análisis de red y memoria.</p></div>
 <div class="pieTarjeta"><div class="bloquePrecio"><span class="precioActual precioGratis">Gratis</span></div><div class="botonesTarjeta">
-<button type="button" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoIntroductionToDigitalForensics"><button type="submit" class="btn btnCarrito"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso" href="cursosForense.html#cursoIntroductionToDigitalForensics"><i class="bi bi-play-circle"></i> Ir al curso</a></div></div></article></div></div></section>
 </main>
 <footer class="pieDePagina"><div class="container-xl">
   <div class="filaPie">
-    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small></div>
+    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small><small><a class="enlacePie" href="../php/login.php"><i class="bi bi-person-lock"></i> Administrador</a></small></div>
     <div class="bloquePie"><h4>Contacto</h4><ul class="listaPie"><li><i class="bi bi-telephone"></i> +507 6123-4567</li><li><i class="bi bi-envelope"></i> info@saberplus.com</li><li><i class="bi bi-geo-alt"></i> Ciudad de Panamá, Panamá</li></ul></div>
     <div class="bloquePie bloqueIntegrantes"><h4>Integrantes</h4><ul class="listaPie listaIntegrantes"><li>Mendoza Luis, 20-23-7674</li><li>Jacinto Jesús, 20-58-9524</li><li>Ivaneth Hacock, 3-760-2486</li></ul></div>
   </div>

@@ -15,7 +15,7 @@
     <a class="marcaSitio navbar-brand" href="index.html"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt="Logotipo de Saber Plus"><span class="nombreSitio">Saber<span class="plusMarca">Plus</span></span></a>
     <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/buscarCursos.php"><i class="bi bi-search"></i> Buscar</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/carrito.php"><i class="bi bi-cart3"></i> Carrito</a></li>
       </ul>
     </div>
   </nav>
@@ -30,7 +30,7 @@
 <h3 class="h6 tituloAprenderas">Lo que aprenderás</h3><ul class="listaAprenderas"><li><i class="bi bi-check-circle-fill"></i> Conceptos de investigación forense digital</li><li><i class="bi bi-check-circle-fill"></i> Cadena de custodia y evidencia</li><li><i class="bi bi-check-circle-fill"></i> Adquisición y análisis de datos</li><li><i class="bi bi-check-circle-fill"></i> Fundamentos legales del peritaje</li></ul>
 <p class="datoExtra mb-0"><i class="bi bi-translate"></i> Idioma: Consultar en la página oficial.</p></div>
 <aside class="col-lg-4 panelCompra"><span class="textoSuave small">Precio del curso</span><div class="bloquePrecio bloquePrecioGrande"><span class="precioActual">$29</span><span class="precioAnterior">$45</span><span class="etiquetaOferta">-36%</span></div><div class="avisoOferta"><i class="bi bi-tag-fill"></i> Oferta: ahorras $16</div>
-<button type="button" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoDigitalForensicsEssentialsDfe"><button type="submit" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso w-100" href="https://eccouncil.org/academia/digital-forensics-essentials-dfe/" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Ir al curso</a>
 <small class="textoSuave">Precios de ejemplo. Costo real: Recursos gratuitos según la página del proveedor</small></aside></div></article><article id="cursoIntroductionToDigitalForensics" class="tarjetaPes cursoDetalle"><div class="row g-0">
 <div class="col-lg-8 p-4"><div class="d-flex justify-content-between align-items-start"><div class="grupoNiveles"><span class="etiquetaNivel nivelPrincipiante">Principiante</span></div></div>
@@ -38,13 +38,13 @@
 <h3 class="h6 tituloAprenderas">Lo que aprenderás</h3><ul class="listaAprenderas"><li><i class="bi bi-check-circle-fill"></i> Qué es la informática forense</li><li><i class="bi bi-check-circle-fill"></i> Tipos de evidencia digital</li><li><i class="bi bi-check-circle-fill"></i> Procedimientos de investigación</li><li><i class="bi bi-check-circle-fill"></i> Herramientas forenses iniciales</li></ul>
 <p class="datoExtra mb-0"><i class="bi bi-translate"></i> Idioma: Consultar en la página oficial.</p></div>
 <aside class="col-lg-4 panelCompra"><span class="textoSuave small">Precio del curso</span><div class="bloquePrecio bloquePrecioGrande"><span class="precioActual precioGratis">Gratis</span></div><div class="avisoOferta avisoGratis"><i class="bi bi-gift-fill"></i> Curso gratuito</div>
-<button type="button" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button>
+<form action="../php/carrito.php" method="post" class="formCarrito"><input type="hidden" name="accion" value="agregar"><input type="hidden" name="codigo" value="cursoIntroductionToDigitalForensics"><button type="submit" class="btn btnCarrito w-100"><i class="bi bi-cart-plus"></i> Añadir al carrito</button></form>
 <a class="btn btnIrCurso w-100" href="https://alison.com/course/introduction-to-digital-forensics" target="_blank" rel="noopener"><i class="bi bi-play-circle"></i> Ir al curso</a>
 <small class="textoSuave">Precios de ejemplo. Costo real: Curso gratuito; el certificado puede tener costo (según Alison)</small></aside></div></article><article class="tarjetaPes tarjetaPendiente p-4"><span class="etiquetaNivel nivelOtro">Pendiente</span><h2 class="h5 mt-3">Próximamente</h2><p class="mb-0">Información pendiente de investigación.</p></article></div>
 </main>
 <footer class="pieDePagina"><div class="container-xl">
   <div class="filaPie">
-    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small></div>
+    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small><small><a class="enlacePie" href="../php/login.php"><i class="bi bi-person-lock"></i> Administrador</a></small></div>
     <div class="bloquePie"><h4>Contacto</h4><ul class="listaPie"><li><i class="bi bi-telephone"></i> +507 6123-4567</li><li><i class="bi bi-envelope"></i> info@saberplus.com</li><li><i class="bi bi-geo-alt"></i> Ciudad de Panamá, Panamá</li></ul></div>
     <div class="bloquePie bloqueIntegrantes"><h4>Integrantes</h4><ul class="listaPie listaIntegrantes"><li>Mendoza Luis, 20-23-7674</li><li>Jacinto Jesús, 20-58-9524</li><li>Ivaneth Hacock, 3-760-2486</li></ul></div>
   </div>

@@ -15,7 +15,7 @@
     <a class="marcaSitio navbar-brand" href="index.html"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt="Logotipo de Saber Plus"><span class="nombreSitio">Saber<span class="plusMarca">Plus</span></span></a>
     <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-1"><li class="nav-item"><a class="enlaceMenu" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li><li class="nav-item"><a class="enlaceMenu" href="cursos.html"><i class="bi bi-journal-code"></i> Cursos</a></li><li class="nav-item"><a class="enlaceMenu" href="certificaciones.html"><i class="bi bi-patch-check"></i> Certificaciones</a></li><li class="nav-item"><a class="enlaceMenu paginaActual" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/buscarCursos.php"><i class="bi bi-search"></i> Buscar</a></li><li class="nav-item"><a class="enlaceMenu" href="../php/carrito.php"><i class="bi bi-cart3"></i> Carrito</a></li>
       </ul>
     </div>
   </nav>
@@ -24,27 +24,27 @@
   <div class="d-flex align-items-center gap-3"><div><h1>Contacto / Sugerencias</h1><p>¿Conoces un curso que debería aparecer aquí? Envía tu sugerencia.</p></div></div><img class="imagenHero" src="../images/ilustracionContacto.svg" alt="">
 </div></section>
 <main class="container-xl contenidoPrincipal">
-<div class="d-flex justify-content-center"><form action="#" method="post" class="formularioSugerencias">
+<div class="d-flex justify-content-center"><form action="../php/guardarContacto.php" method="post" class="formularioSugerencias">
           <div class="mb-3">
             <label for="nombreUsuario" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" required>
+            <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" maxlength="100" required>
           </div>
           <div class="mb-3">
             <label for="correoUsuario" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correoUsuario" name="correoUsuario" required>
+            <input type="email" class="form-control" id="correoUsuario" name="correoUsuario" maxlength="120" required>
           </div>
           <div class="mb-3">
             <label for="areaTecnologica" class="form-label">Área tecnológica</label>
             <select class="form-select" id="areaTecnologica" name="areaTecnologica" required>
               <option value="">Selecciona un área</option>
-              <option>Ciberseguridad</option>
-              <option>Programación</option>
-              <option>Desarrollo Web</option>
-              <option>Redes</option>
-              <option>Bases de Datos</option>
-              <option>Electrónica</option>
-              <option>Red Team / Blue Team</option>
-              <option>Informática Forense</option>
+              <option value="1">Ciberseguridad</option>
+              <option value="2">Programación</option>
+              <option value="3">Desarrollo Web</option>
+              <option value="4">Redes</option>
+              <option value="5">Bases de Datos</option>
+              <option value="6">Electrónica</option>
+              <option value="7">Red Team / Blue Team</option>
+              <option value="8">Informática Forense</option>
             </select>
           </div>
           <fieldset class="mb-3">
@@ -56,22 +56,22 @@
           </fieldset>
           <div class="mb-3">
             <label for="nombreSugerencia" class="form-label">Nombre del curso o certificación</label>
-            <input type="text" class="form-control" id="nombreSugerencia" name="nombreSugerencia" required>
+            <input type="text" class="form-control" id="nombreSugerencia" name="nombreSugerencia" maxlength="150" required>
           </div>
           <div class="mb-3">
             <label for="motivoSugerencia" class="form-label">Motivo de la sugerencia</label>
-            <input type="text" class="form-control" id="motivoSugerencia" name="motivoSugerencia" required>
+            <input type="text" class="form-control" id="motivoSugerencia" name="motivoSugerencia" maxlength="255" required>
           </div>
           <div class="mb-3">
             <label for="comentarios" class="form-label">Comentarios</label>
-            <textarea class="form-control" id="comentarios" name="comentarios" rows="4"></textarea>
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" maxlength="2000"></textarea>
           </div>
           <button type="submit" class="btn btnOficial btn-lg">Enviar sugerencia</button>
         </form></div>
 </main>
 <footer class="pieDePagina"><div class="container-xl">
   <div class="filaPie">
-    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small></div>
+    <div class="bloquePie"><span class="d-flex align-items-center gap-2"><img class="logoMarca" src="../images/logoSaberPlus.svg" alt=""><strong class="nombreSitio">Saber<span class="plusMarca">Plus</span></strong></span><small>Cursos de tecnología.</small><small><a class="enlacePie" href="../php/login.php"><i class="bi bi-person-lock"></i> Administrador</a></small></div>
     <div class="bloquePie"><h4>Contacto</h4><ul class="listaPie"><li><i class="bi bi-telephone"></i> +507 6123-4567</li><li><i class="bi bi-envelope"></i> info@saberplus.com</li><li><i class="bi bi-geo-alt"></i> Ciudad de Panamá, Panamá</li></ul></div>
     <div class="bloquePie bloqueIntegrantes"><h4>Integrantes</h4><ul class="listaPie listaIntegrantes"><li>Mendoza Luis, 20-23-7674</li><li>Jacinto Jesús, 20-58-9524</li><li>Ivaneth Hacock, 3-760-2486</li></ul></div>
   </div>
